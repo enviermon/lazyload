@@ -1,0 +1,67 @@
+/* Style for our header texts
+	* ---------------------------------------*/
+h1{
+  font-size: 5em;
+  font-family: arial,helvetica;
+  color: #fff;
+  margin:0;
+  padding:0;
+}
+
+/* Centered texts in each section
+* ---------------------------------------*/
+.section{
+  text-align:center;
+}
+
+
+/* Backgrounds will cover all the section
+* ---------------------------------------*/
+.section{
+  background-size: cover;
+}
+
+/* Defining each sectino background and styles
+* ---------------------------------------*/
+#section0{
+  background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg1.jpg);
+}
+
+#section2{
+  background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg3.jpg);
+  padding: 6% 0 0 0;
+}
+#section3{
+  background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg4.jpg);
+  padding: 6% 0 0 0;
+}
+#section3 h1{
+  color: #000;
+}
+
+
+.what{
+  width: 100px;
+  height: 50px;
+  bottom:0;
+  right:0;
+  position: absolute;
+  background-color: yellowgreen;
+  -webkit-animation: mymove 3s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: ease; /* Safari 4.0 - 8.0 */
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {bottom: 0px;}
+  to {bottom: 200px;}
+}
+
+@keyframes mymove {
+  from {bottom: 0px;}
+  to {bottom: 200px;}
+}
